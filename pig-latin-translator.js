@@ -1,10 +1,11 @@
-const vowels = ['a', 'e', 'i', 'o', 'u'];
-
 function talkPigLatin(string) {
   const stringArray = string.split('');
   let test;
   stringArray.forEach((element, index) => {
-    if (vowels.indexOf(element) !== -1 && test === undefined) {
+    if (
+      ['a', 'e', 'i', 'o', 'u'].indexOf(element) !== -1 &&
+      test === undefined
+    ) {
       test = index;
     }
   });
